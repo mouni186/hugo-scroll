@@ -16,6 +16,28 @@
         </div>
     </div>
 </header>
+
+<!-- about me -->
+{{ if $data.homepage.about.enable }}
+{{ with $data.homepage.about }}
+<section class="section">
+  <div class="container">
+      <h1>hello</h1>
+      </div>
+      {{ with .image }}
+      <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+        <img class="img-fluid w-100" src="{{ . | absURL }}" alt="about image">
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ end }}
+{{ end }}
+<!-- /about us -->
+
+
+
 <main class="content" role="main">
 
     <div class='fixed-nav'>
